@@ -2,11 +2,15 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Button, Heading, Text } from '@pancakeswap-libs/uikit'
+import { useWallet } from '@binance-chain/bsc-use-wallet'
 import useI18n from 'hooks/useI18n'
 import Page from 'components/layout/Page'
 import Container from 'components/layout/Container'
 import HowItWorks from './components/HowItWorks'
 import NftPreview from './components/NftPreview'
+
+
+
 
 const StyledHero = styled.div`
   border-bottom: 1px solid ${({ theme }) => theme.colors.textSubtle};
@@ -35,9 +39,9 @@ const RegisterToWinPage = () => {
             NFTs
           </Heading>
           <Heading as="h2" size="lg" color="secondary" mb="16px">
-            Trade in for CAKE, or keep for your collection!
+            You must hold at least 69 000 Flix to enter the Naughty Area
           </Heading>
-          <Text mb="24px">{TranslateString(616, 'Register your interest in winning an NFT below.')}</Text>
+          <Text mb="24px"> If you can not wait to use your Naughty to farm Flix for free you can gain access here: </Text>
           <Cta>
             <Button
               as="a"
@@ -45,7 +49,7 @@ const RegisterToWinPage = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              {TranslateString(618, 'Register for total access')}
+              Gain access with Naughty
             </Button>
             <Button as="a" href="#how-it-works" variant="secondary">
               {TranslateString(620, 'Learn more')}

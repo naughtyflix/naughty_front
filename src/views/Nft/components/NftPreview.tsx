@@ -10,7 +10,7 @@ import Image from './Image'
 const NftPreview = () => {
   return (
     <Container>
-      <PleaseWaitCard />
+      
       <NftGrid>
         {orderBy(nfts, 'sortOrder').map((nft) => (
           <div key={nft.name}>
