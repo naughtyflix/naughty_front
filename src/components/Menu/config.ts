@@ -12,6 +12,7 @@ const config: MenuEntry[] = [
     items: [
       {
         label: 'Buy',
+        icon: 'Moon',
         href: '/buynow',
       },
       {
