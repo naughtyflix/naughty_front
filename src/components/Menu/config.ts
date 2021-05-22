@@ -62,7 +62,7 @@ const config: MenuEntry[] = [
     items: [
       {
         label: "Github",
-        href: "https://github.com/pastafinance/",
+        href: "https://github.com/naughtyflix/",
       },
       {
         label: 'RoadMap',
