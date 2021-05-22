@@ -16,6 +16,7 @@ const Farms = lazy(() => import('./views/Farms'))
 const Lottery = lazy(() => import('./views/Lottery'))
 const Buy = lazy(() => import('./views/Buy'))
 const BuyNow = lazy(() => import('./views/BuyNow'))
+const BuyNaughty = lazy(() => import('./views/BuyNaughty'))
 const Teaser = lazy(() => import('./views/Teaser'))
 const Liquidity = lazy(() => import('./views/Liquidity'))
 // const Pools = lazy(() => import('./views/Pools'))
@@ -70,6 +71,10 @@ const App: React.FC = () => {
              <Route path="/buynow">
              <BuyNow />
             </Route>
+            <Route path="/buynaughty">
+             <BuyNaughty />
+            </Route>
+            
              <Route path="/nft"> 
              <Nft /> 
             </Route> 
