@@ -9,7 +9,7 @@ const config: MenuEntry[] = [
   {
     label: 'Buy Naughty',
     icon: 'MoonIcon',
-    href: '/buynow',
+    href: '/buynaughty',
   },
   {
     label: 'Trade Flix',
