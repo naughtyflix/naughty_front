@@ -22,9 +22,8 @@ const FarmTabButtons = ({ stakedOnly, setStakedOnly}) => {
         <ButtonMenuItem as={Link} to={`${url}`}>
         <Text>All</Text>
         </ButtonMenuItem>
-        <ButtonMenuItem as={Link} to={`${url}/ngthy`}>
-        <Text>NGHTY</Text>
-        </ButtonMenuItem>
+       
+        
         <ButtonMenuItem as={Link} to={`${url}/busd`}>
         <Text>BUSD</Text>
         </ButtonMenuItem>

@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { AbiItem } from 'web3-utils'
 import { ContractOptions } from 'web3-eth-contract'
 import useWeb3 from 'hooks/useWeb3'
-import { getMasterChefAddress, getCakeAddress, getLotteryAddress, getLotteryTicketAddress } from 'utils/addressHelpers'
+import { getMasterChefAddress, getCakeAddress, getLotteryAddress, getLotteryTicketAddress,getNGHTYAddress } from 'utils/addressHelpers'
 import { poolsConfig } from 'config/constants'
 import { PoolCategory } from 'config/constants/types'
 import ifo from 'config/abi/ifo.json'
@@ -43,6 +43,10 @@ export const useERC20 = (address: string) => {
 export const useCake = () => {
   return useERC20(getCakeAddress())
 }
+export const useNaughty = () => {
+  return useERC20(getNGHTYAddress())
+}
+
 
 export const useRabbitMintingFarm = (address: string) => {
   const rabbitMintingFarmAbi = (rabbitmintingfarm as unknown) as AbiItem

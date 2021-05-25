@@ -33,13 +33,20 @@ const config: MenuEntry[] = [
   {
     label: 'Naughty Pool',
     icon: 'PoolIcon',
-    href: '/pools',
+    href: '/lovefarms',
   },
+  
   {
     label: 'Flix Farms',
     icon: 'FarmIcon',
     href: '/farms',
   },
+  {
+    label: 'Rug Pools',
+    icon: 'PoolIcon',
+    href: '/rugfarms',
+  },
+
   
   {
     label: 'Lottery (Soon...)',

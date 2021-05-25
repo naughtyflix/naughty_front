@@ -13,6 +13,8 @@ import NftGlobalNotification from './views/Nft/components/NftGlobalNotification'
 // Only pool is included in the main bundle because of it's the most visited page'
 const Home = lazy(() => import('./views/Home'))
 const Farms = lazy(() => import('./views/Farms'))
+const LoveFarms = lazy(() => import('./views/LoveFarms'))
+const RugFarms = lazy(() => import('./views/RugFarms'))
 const Lottery = lazy(() => import('./views/Lottery'))
 const Buy = lazy(() => import('./views/Buy'))
 const BuyNow = lazy(() => import('./views/BuyNow'))
@@ -54,7 +56,10 @@ const App: React.FC = () => {
               <Farms />
             </Route>
             <Route path="/pools">
-              <Farms tokenMode/>
+              <Farms />
+            </Route>
+            <Route path="/rugfarms">
+              <RugFarms />
             </Route>
             {/* <Route path="/pools"> */}
             {/*  <Pools /> */}
@@ -74,7 +79,9 @@ const App: React.FC = () => {
             <Route path="/buynaughty">
              <BuyNaughty />
             </Route>
-            
+            <Route path="/lovefarms">
+             <LoveFarms tokenMode/>
+            </Route>
              <Route path="/nft"> 
              <Nft /> 
             </Route> 

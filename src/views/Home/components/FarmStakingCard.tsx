@@ -14,7 +14,7 @@ import useAllEarnings from '../../../hooks/useAllEarnings'
 import { usePriceCakeBusd } from '../../../state/hooks'
 import { getCakeAddress,getNGHTYAddress } from '../../../utils/addressHelpers'
 import useTokenBalance from '../../../hooks/useTokenBalance'
-import { getBalanceNumber } from '../../../utils/formatBalance'
+import { getBalanceNumber,getBalance9Number } from '../../../utils/formatBalance'
 
 const StyledFarmStakingCard = styled(Card)`
   background-image: url('/images/egg/2a.gif');
@@ -52,7 +52,7 @@ const FarmedStakingCard = () => {
   const TranslateString = useI18n()
   const farmsWithBalance = useFarmsWithBalance()
   const cakeBalance = getBalanceNumber(useTokenBalance(getCakeAddress()))
-  const naughtyBalance = getBalanceNumber(useTokenBalance(getNGHTYAddress()))
+  const naughtyBalance = getBalance9Number(useTokenBalance(getNGHTYAddress()))
   const eggPrice = usePriceCakeBusd().toNumber()
   const allEarnings = useAllEarnings()
   const earningsSum = allEarnings.reduce((accum, earning) => {

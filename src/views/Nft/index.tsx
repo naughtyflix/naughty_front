@@ -8,7 +8,7 @@ import NftList from './components/NftList'
 import NftProvider from './contexts/NftProvider'
 import NftInfo from './components/NftInfo'
 import Register from './RegisterToWinPage'
-import { getNGHTYAddress } from '../../utils/addressHelpers'
+import { getCakeAddress } from '../../utils/addressHelpers'
 import useTokenBalance from '../../hooks/useTokenBalance'
 import { getBalanceNumber } from '../../utils/formatBalance'
 
@@ -20,10 +20,11 @@ const StyledHero = styled.div`
 
 const Nft = () => {
   const TranslateString = useI18n()
-  const cakeBalance = getBalanceNumber(useTokenBalance(getNGHTYAddress()))
+  const cakeBalance = getBalanceNumber(useTokenBalance(getCakeAddress()))
   let show
 
-  if(cakeBalance < 35000000000000000){
+
+  if(cakeBalance < 79000068){
 
     show = <Register />
   }

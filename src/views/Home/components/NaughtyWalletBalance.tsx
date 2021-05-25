@@ -4,7 +4,7 @@ import { useWallet } from '@binance-chain/bsc-use-wallet'
 import useNaughtyBalance from 'hooks/useNaughtyBalance'
 import useI18n from 'hooks/useI18n'
 import { getNGHTYAddress } from 'utils/addressHelpers'
-import { getBalanceNumber } from 'utils/formatBalance'
+import { getBalance9Number } from 'utils/formatBalance'
 import CardValue from './CardValue'
 
 const NaughtyWalletBalance = ({naughtyBalance}) => {

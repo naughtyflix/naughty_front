@@ -42,15 +42,19 @@ const Farms: React.FC<FarmsProps> = (farmsProps) => {
 
   const [stakedOnly, setStakedOnly] = useState(false)
 
-  const activeFarms = farmsLP.filter((farm) => !!farm.isTokenOnly === !!tokenMode && farm.multiplier !== '0X')
+  const activeFarms = farmsLP.filter((farm) => !!farm.isTokenOnly === !!tokenMode && farm.multiplier !== '0X' && !farm.lpSymbol.startsWith("RUG"))
   const inactiveFarms = farmsLP.filter((farm) => !!farm.isTokenOnly === !!tokenMode && farm.multiplier === '0X')
 
   const stakedOnlyFarms = activeFarms.filter(
     (farm) => farm.userData && new BigNumber(farm.userData.stakedBalance).isGreaterThan(0),
   )
   
-  const pastaOnlyFarms = activeFarms.filter(
+  const naughtyOnlyFarms = activeFarms.filter(
     (farm) => farm.lpSymbol.startsWith("NGTHY"),
+
+  )
+  const rugOnlyFarms = activeFarms.filter(
+    (farm) => farm.lpSymbol.startsWith("RUG"),
 
   )
   const busdOnlyFarms = activeFarms.filter(
@@ -67,7 +71,10 @@ const Farms: React.FC<FarmsProps> = (farmsProps) => {
   const stakedBnbOnlyFarms = bnbOnlyFarms.filter(
     (farm) => farm.userData && new BigNumber(farm.userData.stakedBalance).isGreaterThan(0),
   )
-  const stakedPastaOnlyFarms = pastaOnlyFarms.filter(
+  const stakedNaughtyOnlyFarms = naughtyOnlyFarms.filter(
+    (farm) => farm.userData && new BigNumber(farm.userData.stakedBalance).isGreaterThan(0),
+  )
+  const stakedRugOnlyFarms = rugOnlyFarms.filter(
     (farm) => farm.userData && new BigNumber(farm.userData.stakedBalance).isGreaterThan(0),
   )
   
@@ -139,8 +146,9 @@ const Farms: React.FC<FarmsProps> = (farmsProps) => {
           <Route exact path={`${path}`}>
             {stakedOnly ? farmsList(stakedOnlyFarms, false) : farmsList(activeFarms, false)}
           </Route>
+          
           <Route exact path={`${path}/ngthy`}>
-          {stakedOnly ? farmsList(stakedPastaOnlyFarms, false) : farmsList(pastaOnlyFarms, false)}
+          {stakedOnly ? farmsList(stakedNaughtyOnlyFarms, false) : farmsList(naughtyOnlyFarms, false)}
           </Route>
           <Route exact path={`${path}/busd`}>
             {stakedOnly ? farmsList(stakedBusdOnlyFarms, false) : farmsList(busdOnlyFarms, false)}

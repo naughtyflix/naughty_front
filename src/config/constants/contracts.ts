@@ -30,7 +30,7 @@ export default {
     97: '',
   },
     ngthy: {
-    56: '0x9f985C763D8E106a58bFe983947dbfFae01BdAEc',
+    56: '0x83aea5d22b8e09981780182aa2d8658cb7682c7b',
     97: '',
   },
 }

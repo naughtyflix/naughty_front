@@ -31,6 +31,7 @@ const TwitterCard = () => {
       <CardBody>
         <Heading size="xl" mb="24px">
           Juicy News
+
         </Heading>
         <Timeline
           dataSource={{
@@ -39,9 +40,13 @@ const TwitterCard = () => {
           }}
           options={{
             height: '300',
-            chrome: "noheader, nofooter",
-            width: "400"
+            chrome: "noheader, nofooter, transparent",
+            width: "400",
+            theme: "light",
+            
+            
           }}
+          background-color= "#2c3e50"
         />
       </CardBody>
     </StyledTwitterCard>
