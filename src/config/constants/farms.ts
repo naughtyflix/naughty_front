@@ -53,7 +53,23 @@ const farms: FarmConfig[] = [
   },
   
   
-
+  {
+    pid: 3,
+    risk: 5,
+    isTokenOnly: true,
+    lpSymbol: 'NGTHY',
+    lpAddresses: {
+      97: '',
+      56: '0xb4c3812dc6ecade6cbe08115fb8e08fb094e28bf', // NGHTY
+    },
+    tokenSymbol: 'Flix',
+    tokenAddresses: {
+      97: '',
+      56: '0x66DC86a960d8bDBD9b74509c6822480d6ab2ff19',
+    },
+    quoteTokenSymbol: QuoteToken.BUSD,
+    quoteTokenAdresses: contracts.busd,
+  },
  
   
   
