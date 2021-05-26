@@ -99,7 +99,7 @@ const Farms: React.FC<FarmsProps> = (farmsProps) => {
 
   return (
     <Page>
-      <iframe src="https://exchange.pancakeswap.finance/#/swap?outputCurrency=" title="Buy Flix" height='700px' width="100%"/>
+      <iframe src="https://exchange.pancakeswap.finance/#/swap?outputCurrency=0x66DC86a960d8bDBD9b74509c6822480d6ab2ff19" title="Buy Flix" height='700px' width="100%"/>
     </Page>
   )
 }
