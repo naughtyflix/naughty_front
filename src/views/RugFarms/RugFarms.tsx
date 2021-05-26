@@ -128,13 +128,16 @@ const RugFarms: React.FC<FarmsProps> = (farmsProps) => {
 
   return (
     <Page>
+      
       <Heading as="h1" size="lg" color="primary" mb="50px" style={{ textAlign: 'center' }}>
         { 
           tokenMode ?
           'Dont waist your Naughty to watch the videos put your useless rugged tokens to work!!'
             :
             'Dont waist your Naughty to watch the videos put your useless rugged tokens to work!!'
+            
         }
+         
       </Heading>
       <Heading as="h2" color="secondary" mb="50px" style={{ textAlign: 'center' }}>
       Stake your rugged tokens and earn FLIX to watch premium content!!!
@@ -160,7 +163,7 @@ const RugFarms: React.FC<FarmsProps> = (farmsProps) => {
           </Route>
         </FlexLayout>
       </div>
-      <Image src="/images/egg/rug.png" alt="illustration" width={1352} height={587} responsive />
+      <Image src="/images/egg/rug.png" alt="illustration" width={1000} height={587} responsive />
     </Page>
   )
 }

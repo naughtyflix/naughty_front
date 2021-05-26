@@ -8,12 +8,12 @@ const farms: FarmConfig[] = [
     lpSymbol: 'Flix-BUSD LP', 
     lpAddresses: {
       97: '',
-      56: '0xfb8eebdbf12bbeb289ef5030e82e6cf898cc3f00',
+      56: '0xa627d6c409f7d7808bf3377af58954aeda0ca871',
     },
     tokenSymbol: 'Flix',
     tokenAddresses: {
       97: '',
-      56: '0xcf225f8961839cd587211dee112cb2622f9227d7',
+      56: '0x66DC86a960d8bDBD9b74509c6822480d6ab2ff19',
     },
     quoteTokenSymbol: QuoteToken.BUSD,
     quoteTokenAdresses: contracts.busd,
@@ -24,12 +24,12 @@ const farms: FarmConfig[] = [
     lpSymbol: 'Flix-BNB LP',   
     lpAddresses: {
       97: '',
-      56: '0xe3aDE2ff1d125b290DC3928f07e31FC2Efd7A6D3',
+      56: '0x8555e502a5712890d7ef2777dea844bb4b73a407',
     },
     tokenSymbol: 'Flix',
     tokenAddresses: {
       97: '',
-      56: '0xcF225F8961839CD587211DEE112cb2622f9227D7',
+      56: '0x66DC86a960d8bDBD9b74509c6822480d6ab2ff19',
     },
     quoteTokenSymbol: QuoteToken.BNB,
     quoteTokenAdresses: contracts.wbnb,
@@ -53,76 +53,8 @@ const farms: FarmConfig[] = [
   },
   
   
-  {
-    pid: 3,
-    risk: 5,
-    isTokenOnly: true,
-    lpSymbol: 'NGTHY',
-    lpAddresses: {
-      97: '',
-      56: '0xfb8eebdbf12bbeb289ef5030e82e6cf898cc3f00', // NGHTY
-    },
-    tokenSymbol: 'Flix',
-    tokenAddresses: {
-      97: '',
-      56: '0xcf225f8961839cd587211dee112cb2622f9227d7',
-    },
-    quoteTokenSymbol: QuoteToken.BUSD,
-    quoteTokenAdresses: contracts.busd,
-  },
-  {
-    pid: 6,
-    risk: 5,
-    isTokenOnly: false,
-    lpSymbol: 'RUG(Forestry)-NGTHY',
-    lpAddresses: {
-      97: '',
-      56: '0xfb8eebdbf12bbeb289ef5030e82e6cf898cc3f00', // NGHTY
-    },
-    tokenSymbol: 'Flix',
-    tokenAddresses: {
-      97: '',
-      56: '0xcf225f8961839cd587211dee112cb2622f9227d7',
-    },
-    quoteTokenSymbol: QuoteToken.RUG,
-    quoteTokenAdresses: contracts.ngthy,
-  },
-  {
-    pid: 4,
-    risk: 5,
-    isTokenOnly: true,
-    lpSymbol: 'Naughty-BNB LP',
-    lpAddresses: {
-      97: '',
-      56: '0xfb8eebdbf12bbeb289ef5030e82e6cf898cc3f00', // Nayghty-BUSD LP
-    },
-    tokenSymbol: 'NGTHY',
-    tokenAddresses: {
-      97: '',
-      56: '0xcf225f8961839cd587211dee112cb2622f9227d7',
-    },
-    quoteTokenSymbol: QuoteToken.BUSD,
-    quoteTokenAdresses: contracts.busd,
-  },
-  {
-    pid: 5,
-    risk: 5,
-    isTokenOnly: true,
-    lpSymbol: 'Naughty-BUSD LP',
-    lpAddresses: {
-      97: '',
-      56: '0xfb8eebdbf12bbeb289ef5030e82e6cf898cc3f00', // Naughty-BUSD LP
-    },
-    tokenSymbol: 'NGTHY',
-    tokenAddresses: {
-      97: '',
-      56: '0xcf225f8961839cd587211dee112cb2622f9227d7',
-    },
-    quoteTokenSymbol: QuoteToken.BUSD,
-    quoteTokenAdresses: contracts.busd,
-  },
-  
-  
+
+ 
   
   
 ]

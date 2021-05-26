@@ -1,4 +1,5 @@
 import React, { useEffect, useCallback, useState } from 'react'
+import styled from 'styled-components'
 import { Route, useRouteMatch } from 'react-router-dom'
 import { useDispatch } from 'react-redux'
 import BigNumber from 'bignumber.js'
@@ -20,7 +21,26 @@ import Divider from './components/Divider'
 export interface FarmsProps{
   tokenMode?: boolean
 }
+const Hero = styled.div`
+  align-items: center;
+  background-image: url('/images/egg/risk.png');
+  background-repeat: no-repeat;
+  background-position: top center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+  margin-bottom: 32px;
+  padding-top: 116px;
+  text-align: center;
 
+  ${({ theme }) => theme.mediaQueries.lg} {
+    background-image: url('/images/egg/risk.png');
+    background-position: left center, right center;
+    height: 165px;
+    padding-top: 0;
+  }
+`
 const Farms: React.FC<FarmsProps> = (farmsProps) => {
   const { path } = useRouteMatch()
   const TranslateString = useI18n()
@@ -128,6 +148,7 @@ const Farms: React.FC<FarmsProps> = (farmsProps) => {
 
   return (
     <Page>
+       <Hero>
       <Heading as="h1" size="lg" color="primary" mb="50px" style={{ textAlign: 'center' }}>
         { 
           tokenMode ?
@@ -135,11 +156,15 @@ const Farms: React.FC<FarmsProps> = (farmsProps) => {
             :
           'Stake your LP tokens to earn NGTHY'
         }
+        
       </Heading>
+      
       <Heading as="h2" color="secondary" mb="50px" style={{ textAlign: 'center' }}>
         Dont waist your Naughty to watch the videos
+       
       </Heading>
       <FarmTabButtons stakedOnly={stakedOnly} setStakedOnly={setStakedOnly}/>
+      </Hero>
       <div>
         <Divider />
         <FlexLayout>
@@ -158,7 +183,7 @@ const Farms: React.FC<FarmsProps> = (farmsProps) => {
           </Route>
         </FlexLayout>
       </div>
-      <Image src="/images/egg/8.png" alt="illustration" width={1352} height={587} responsive />
+      
     </Page>
   )
 }

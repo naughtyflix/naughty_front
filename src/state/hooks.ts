@@ -73,13 +73,9 @@ export const usePriceBnbBusd = (): BigNumber => {
   const farm = useFarmFromPid(pid)
   return farm.tokenPriceVsQuote ? new BigNumber(farm.tokenPriceVsQuote) : ZERO
 }
-export const usePriceNaughtyBusd = (): BigNumber => {
-  const pid = 5; // Naughty-BUSD LP
-  const farm = useFarmFromPid(pid);
-  return farm.tokenPriceVsQuote ? new BigNumber(farm.tokenPriceVsQuote) : ZERO;
-}
+
 export const usePriceNaughtyBnB = (): BigNumber => {
-  const pid = 4; // Naughty-BNB LP
+  const pid = 2; // Naughty-BNB LP
   const farm = useFarmFromPid(pid);
   return farm.tokenPriceVsQuote ? new BigNumber(farm.tokenPriceVsQuote) : ZERO;
 }

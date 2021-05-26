@@ -23,6 +23,15 @@ const Nfts: Nft[] = [
     sortOrder: 999,
     bunnyId: 1,
   },
+  {
+    name: 'Johny Sins',
+    description: 'These bunnies love nothing more than swapping pancakes. Especially on BSC.',
+    originalImage: 'https://gateway.pinata.cloud/ipfs/QmXdHqg3nywpNJWDevJQPtkz93vpfoHcZWQovFz2nmtPf5/swapsies.png',
+    previewImage: 'naughty2.png',
+    blurImage: 'naughty2blur.png',
+    sortOrder: 999,
+    bunnyId: 1,
+  },
 
  
 ]

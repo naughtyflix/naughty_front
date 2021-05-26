@@ -7,7 +7,7 @@ import { useTotalSupply, useBurnedBalance } from 'hooks/useNaughtyBalance'
 import useI18n from 'hooks/useI18n'
 import { getNGHTYAddress } from 'utils/addressHelpers'
 import CardValue from './CardValue'
-import { useFarms, usePriceCakeBNB } from '../../../state/hooks'
+import { useFarms, usePriceCakeBNB,usePriceBnbBusd ,usePriceCakeBusd} from '../../../state/hooks'
 
 const StyledCakeStats = styled(Card)`
   margin-left: auto;
@@ -27,10 +27,12 @@ const CakeStats = () => {
   const totalSupply = useTotalSupply()
   const burnedBalance = useBurnedBalance(getNGHTYAddress())
   const farms = useFarms();
+  const bnbPrice = usePriceBnbBusd();
   const eggPrice = usePriceCakeBNB();
+  const naughtyPrice = eggPrice.times(bnbPrice)
   const circSupply = totalSupply ? totalSupply.minus(burnedBalance) : new BigNumber(0);
   const cakeSupply = getBalanceNumber(circSupply);
-  const marketCap = eggPrice.times(circSupply);
+  const marketCap = naughtyPrice.times(circSupply);
 
   
   
@@ -47,7 +49,7 @@ const CakeStats = () => {
         </Row>
         <Row>
           <Text fontSize="14px">{TranslateString(999, 'Market Cap')}</Text>
-          <CardValue fontSize="14px" value={getBalanceNumber(marketCap)} decimals={0} prefix="BnB" />
+          <CardValue fontSize="14px" value={getBalanceNumber(marketCap)} decimals={0} prefix="$" />
 
         </Row>
         <Row>

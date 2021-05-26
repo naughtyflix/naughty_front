@@ -8,7 +8,7 @@ import { Image, Heading } from '@pancakeswap-libs/uikit'
 import { BLOCKS_PER_YEAR, CAKE_PER_BLOCK, CAKE_POOL_PID } from 'config'
 import FlexLayout from 'components/layout/Flex'
 import Page from 'components/layout/Page'
-import { useFarms, usePriceBnbBusd, usePriceCakeBusd ,usePriceNaughtyBusd} from 'state/hooks'
+import { useFarms, usePriceBnbBusd, usePriceCakeBusd ,usePriceNaughtyBnB} from 'state/hooks'
 import useRefresh from 'hooks/useRefresh'
 import { fetchFarmUserDataAsync } from 'state/actions'
 import { QuoteToken } from 'config/constants/types'
@@ -26,7 +26,7 @@ const LoveFarms: React.FC<FarmsProps> = (farmsProps) => {
   const TranslateString = useI18n()
   const farmsLP = useFarms()
   const cakePrice = usePriceCakeBusd()
-  const naughtyPrice = usePriceNaughtyBusd()
+  const naughtyPrice = usePriceNaughtyBnB()
   const bnbPrice = usePriceBnbBusd()
   const { account, ethereum }: { account: string; ethereum: provider } = useWallet()
   console.log(account)
@@ -146,7 +146,7 @@ const LoveFarms: React.FC<FarmsProps> = (farmsProps) => {
          
         </FlexLayout>
       </div>
-      <Image src="/images/egg/8.png" alt="illustration" width={1352} height={587} responsive />
+     
     </Page>
   )
 }
