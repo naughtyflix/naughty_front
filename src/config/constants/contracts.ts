@@ -1,6 +1,6 @@
 export default {
   cake: {
-    56: '0x66DC86a960d8bDBD9b74509c6822480d6ab2ff19',
+    56: '0x5Ac3786CbE72B1b7B313692a37ac850545B6C749',
     97: '',
   },
   
