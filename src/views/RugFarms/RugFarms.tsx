@@ -132,9 +132,9 @@ const RugFarms: React.FC<FarmsProps> = (farmsProps) => {
       <Heading as="h1" size="lg" color="primary" mb="50px" style={{ textAlign: 'center' }}>
         { 
           tokenMode ?
-          'Dont waist your Naughty to watch the videos put your useless rugged tokens to work!!'
+          'Dont waste your Naughty to watch the videos put your useless rugged tokens to work!!'
             :
-            'Dont waist your Naughty to watch the videos put your useless rugged tokens to work!!'
+            'Dont waste your Naughty to watch the videos put your useless rugged tokens to work!!'
             
         }
          

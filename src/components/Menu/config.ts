@@ -28,18 +28,18 @@ const config: MenuEntry[] = [
   {
     label: 'NSFW Exclusive NFT',
     icon: 'NftIcon',
-    href: '/nft',
+    href: '/teaser',
   },
   {
     label: 'Naughty Pool',
     icon: 'PoolIcon',
-    href: '/lovefarms',
+    href: '/teaser',
   },
   
   {
     label: 'Flix Farms',
     icon: 'FarmIcon',
-    href: '/farms',
+    href: '/teaser',
   },
   {
     label: 'Rug Pools',
