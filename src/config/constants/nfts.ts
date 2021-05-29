@@ -6,33 +6,14 @@ export const PANCAKE_RABBITS_ADDRESS = '0xDf7952B35f24aCF7fC0487D01c8d5690a60DBa
 const Nfts: Nft[] = [
 
   {
-    name: 'Leo Lulu',
-    description: 'These bunnies love nothing more than swapping pancakes. Especially on BSC.',
-    originalImage: 'https://gateway.pinata.cloud/ipfs/QmUpiGE7HvBxydx47sGB8V9hsZbPE6Av2miCgZzKACg43p',
-    previewImage: 'naughty3.gif',
-    blurImage: 'swapsies-blur.png',
+    name: 'ShitSHow Redemption',
+    description: 'You deserve way more than this after todays shitshow <3',
+    originalImage: 'https://gateway.pinata.cloud/ipfs/QmPV5AWMzZV1Pv93RKxjdYErS2tJy58DcYrTCGanydwfuZ',
+    previewImage: 'gurl.png',
+    blurImage: 'blur1.png',
     sortOrder: 999,
     bunnyId: 0,
   },
-  {
-    name: 'vita sky',
-    description: 'These bunnies love nothing more than swapping pancakes. Especially on BSC.',
-    originalImage: 'https://gateway.pinata.cloud/ipfs/QmXdHqg3nywpNJWDevJQPtkz93vpfoHcZWQovFz2nmtPf5/swapsies.png',
-    previewImage: 'naughty2.png',
-    blurImage: 'naughty2blur.png',
-    sortOrder: 999,
-    bunnyId: 1,
-  },
-  {
-    name: 'Johny Sins',
-    description: 'These bunnies love nothing more than swapping pancakes. Especially on BSC.',
-    originalImage: 'https://gateway.pinata.cloud/ipfs/QmXdHqg3nywpNJWDevJQPtkz93vpfoHcZWQovFz2nmtPf5/swapsies.png',
-    previewImage: 'naughty2.png',
-    blurImage: 'naughty2blur.png',
-    sortOrder: 999,
-    bunnyId: 1,
-  },
-
  
 ]
 

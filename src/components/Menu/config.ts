@@ -28,7 +28,7 @@ const config: MenuEntry[] = [
   {
     label: 'NSFW Exclusive NFT',
     icon: 'NftIcon',
-    href: '/teaser',
+    href: '/nft',
   },
   {
     label: 'Naughty Pool',

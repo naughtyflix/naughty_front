@@ -44,7 +44,7 @@ const HowItWorks = () => {
               <ArrowForwardIcon />
             </Icon>
             <Text>
-              You must get a minumum of 333 333 naughty tokens to have access to the videos
+              You must get a minumum of 69 naughty tokens to have access to the videos
             </Text>
           </Row>
           <Row>

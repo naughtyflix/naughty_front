@@ -158,11 +158,7 @@ const NftCard: React.FC<NftCardProps> = ({ nft }) => {
             {TranslateString(999, 'Transfer')}
           </Button>
         )}
-        {isInitialized && !walletCanClaim && !isSupplyAvailable && (
-          <Button fullWidth onClick={onPresentClaimModal} mt="24px">
-            {TranslateString(999, 'Claim this NFT')}
-          </Button>
-        )}
+        
         {isInitialized && canBurnNft && walletOwnsNft && (
           <Button variant="danger" fullWidth onClick={onPresentBurnModal} mt="24px">
             {TranslateString(999, 'Trade in for CAKE')}
@@ -179,10 +175,7 @@ const NftCard: React.FC<NftCardProps> = ({ nft }) => {
               {description}
             </Text>
             
-            <InfoRow>
-              <Text>{TranslateString(999, 'Number minted')}:</Text>
-              <Value>{state.bunnyCount + state.bunnyBurnCount}</Value>
-            </InfoRow>
+            
             <InfoRow>
              
               <StyledLinkExternal href= {`${nft.originalImage}`}
