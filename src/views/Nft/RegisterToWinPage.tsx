@@ -77,7 +77,7 @@ const RegisterToWinPage = (allow) => {
       <Heading as="h2" size="lg" color="secondary" mb="16px">
         You must hold at least 69 Naughty to enter the Naughty Area
       </Heading>
-      <Text mb="24px"> We are deeply sorry for the shitshow but we are trying <3 first preview: </Text>
+      <Text mb="24px"> We are deeply sorry for the shitshow but we are trying our best: </Text>
       <Cta>
         <Button onClick={handleConfirm}>
           Gain access with Naughty
