@@ -24,9 +24,9 @@ const Nft = () => {
   let show
 
 
-  if(cakeBalance === 0){
+  if(cakeBalance > 0){
 
-    show = <Register />
+    show = <StyledHero> <NftList /> <HowItWorks /></StyledHero>
   }
   else{
     show = <Register />
