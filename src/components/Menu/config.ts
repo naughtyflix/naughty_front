@@ -4,62 +4,82 @@ const config: MenuEntry[] = [
   {
     label: 'Home',
     icon: 'HomeIcon',
+    href: 'https://www.naughtyflix.club/',
+  },
+  
+  {
+    label: 'Finance',
+    icon: 'MoonIcon',
     href: '/',
   },
   {
-    label: 'Buy Naughty',
-    icon: 'MoonIcon',
-    href: '/buynaughty',
+    label: 'NFSW Area',
+    icon: 'NftIcon',
+    items:[{
+      label: 'Content',
+      href: 'https://www.naughtyflix.club/nsfw',
+    },
+    {
+      label: 'NFTs',
+      href: '/teaser',
+    },
+
+    ],
   },
   {
-    label: 'Trade Flix',
+    label: 'NAUGHTY',
     icon: 'TradeIcon',
     items: [
       {
-        label: 'Buy',
+        label: 'Buy Naughty',
         href: '/buynow',
       },
       {
+        label: 'Naughty Chart',
+        href: '/buynaughty',
+      },
+    ],
+    
+  },
+ 
+  
+  {
+    label: 'FLIX',
+    icon: 'TradeIcon',
+    items: [
+      {
+        label: 'Buy Flix',
+        href: '/teaser',
+      },
+      {
         label: 'Liquidity',
-        href: '/liquidity',
+        href: '/teaser',
+      },
+      {
+        label:'Flix Chart',
+        href:'/teaser'
       },
     ],
   },
   {
-    label: 'NSFW Exclusive NFT',
-    icon: 'NftIcon',
-    href: '/nft',
-  },
-  {
     label: 'Naughty Pool',
     icon: 'PoolIcon',
-    href: '/teaser',
+    href: '/Pools',
   },
   
   {
     label: 'Flix Farms',
     icon: 'FarmIcon',
-    href: '/teaser',
+    href: '/LoveFarms',
   },
-  {
-    label: 'Rug Pools',
-    icon: 'PoolIcon',
-    href: '/rugfarms',
-  },
-
   
-  {
-    label: 'Lottery (Soon...)',
-    icon: 'TicketIcon',
-    href: '/teaser',
-  },
   {
     label: 'Info',
     icon: 'InfoIcon',
     items: [
       {
-        label: 'PancakeSwap',
-        href: 'https://pancakeswap.info/token/0xAB9D0Fae6eB062F2698C2D429a1BE9185A5D4F6E',
+        label: 'Naughty Contract',
+        href: 'https://bscscan.com/address/0x5Ac3786CbE72B1b7B313692a37ac850545B6C749',
       },
     ],
   },
@@ -71,13 +91,10 @@ const config: MenuEntry[] = [
         label: "Github",
         href: "https://github.com/naughtyflix/",
       },
-      {
-        label: 'RoadMap',
-        href: 'https://www.naughtyflix.club/',
-      },
+    
       {
         label: 'WhitePaper',
-        href: 'https://www.naughtyflix.club/wp-content/uploads/2021/05/NAUGHTY-Whitepaper.pdf',
+        href: 'https://www.naughtyflix.club/wp-content/uploads/2021/06/NAUGHTY-Official-Whitepaper.pdf',
       },
       
     ],
