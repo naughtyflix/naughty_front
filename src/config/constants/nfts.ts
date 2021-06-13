@@ -17,7 +17,7 @@ const Nfts: Nft[] = [
     {
     name: 'Joana Marley',
     description: 'The first exclusive content on NaughtyFlix',
-    originalImage: 'https://wetransfer.com/downloads/cb14a93da11f0ca946c0278aa750393320210601182948/7477d0201d0c9985e590e156b0e37ea220210601183003/a55721',
+    originalImage: 'https://gateway.pinata.cloud/ipfs/QmWHW35xVj2Rgdr4GGrJr5YkCk4jCdKJKfudjtMRHbzoz4',
     previewImage: 'joana.png',
     blurImage: 'joanablur.png',
     sortOrder: 999,
